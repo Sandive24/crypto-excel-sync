@@ -187,26 +187,13 @@ Pada contoh di README hanya digunakan 1 file, namun Anda bisa menambah file Exce
 
 ---
 
-## 🖼️ Screenshot
+## 📸 Screenshot Aplikasi
 
-**1. Proses Mining Data CoinGecko**
-
-<p align="center">
-  <img src="asset/coingecko.png" alt="Proses Mining Data di CLI" width="700"/>
-</p>
-
-**2. Proses Mining Data CoinMarketCap**
-
-<p align="center">
-  <img src="asset/coinmarketcap.png" alt="Proses Mining Data di CLI" width="700"/>
-</p>
-
-**3. Hasil Update di Excel**
-
-<p align="center">
-  <img src="asset/hasil.png" alt="Hasil Update di Excel" width="700"/>
-</p>
-
+| Deskripsi                 | Cuplikan                                      |
+| ------------------------- | --------------------------------------------- |
+| Coingecko Process         | ![Price Converter](asset\coingecko.png)       |
+| Coinmarketcap Process     | ![Price Checker](asset\coinmarketcap.png)     |
+| Hasil                     | ![Cuaca](asset\hasil.png)                     |
 ---
 
 ## 📄 Lisensi
