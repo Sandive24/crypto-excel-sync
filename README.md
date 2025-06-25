@@ -172,4 +172,4 @@ Anda dapat mengatur update otomatis ke lebih dari satu file Excel (lokal dan clo
 
 ---
 
-Dibuat dengan ❤️ oleh AHMAD NUR IKHSAN
+_Dibuat dengan_ ❤️ oleh AHMAD NUR IKHSAN
