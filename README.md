@@ -168,24 +168,4 @@ Pada contoh di README hanya digunakan 1 file, namun Anda bisa menambah file Exce
 
 ---
 
-## 📸 Screenshot Aplikasi
-
-| Deskripsi             | Cuplikan                                    |
-|-----------------------|---------------------------------------------|
-| Coingecko Process     | ![Price Converter](asset/coingecko.png)     |
-| Coinmarketcap Process | ![Price Checker](asset/coinmarketcap.png)   |
-| Hasil                 | ![Cuaca](asset/hasil.png)                   |
-
----
-
-## 📄 Lisensi
-
-MIT License
-
----
-
-<p align="center">
-  <img src="https://www.coingecko.com/favicon.ico" width="24"/>
-  <img src="https://s2.coinmarketcap.com/static/cloud/img/coinmarketcap_white_1.svg" width="24"/>
   Dibuat dengan ❤️ oleh AHMAD NUR IKHSAN
-</p>
