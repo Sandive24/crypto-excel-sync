@@ -119,25 +119,6 @@ price_update/
 
 ---
 
-## 📝 Struktur Sheet Excel
-
-### Sheet `KONVERSI` (untuk harga kripto)
-
-|   | A (CMC ID) | B (CG)      | E (CMC PRICE) | F (CG PRICE) | H (LAST UPDATE CMC) | I (LAST UPDATE CG) |
-|---|------------|-------------|---------------|--------------|---------------------|--------------------|
-| 1 | 32217      | layerzero   |               |              |                     |                    |
-| 2 | 1          | bitcoin     |               |              |                     |                    |
-|...| ...        | ...         | ...           | ...          | ...                 | ...                |
-
-### Sheet `REWARD` (untuk reward sinkronisasi)
-
-|   | A    | B      | C           | D      | E           | F           | G               | H            |
-|---|------|--------|-------------|--------|-------------|-------------|-----------------|--------------|
-| 1 | NAMA | VOLUME | VOLUME UNIT | REWARD | REWARD UNIT | MAX REWARD  | MAX REWARD UNIT | Last Updated |
-| 2 | ...  | ...    | ...         | ...    | ...         | ...         | ...             | ...          |
-
----
-
 ## ⚡ Penjelasan Singkat Kode
 
 - **fungsi_coingecko.py:**  
@@ -191,9 +172,10 @@ Pada contoh di README hanya digunakan 1 file, namun Anda bisa menambah file Exce
 
 | Deskripsi                 | Cuplikan                                      |
 | ------------------------- | --------------------------------------------- |
-| Coingecko Process         | ![Price Converter](asset\coingecko.png)       |
-| Coinmarketcap Process     | ![Price Checker](asset\coinmarketcap.png)     |
-| Hasil                     | ![Cuaca](asset\hasil.png)                     |
+| Coingecko Process         | ![Price Converter](asset/coingecko.png)       |
+| Coinmarketcap Process     | ![Price Checker](asset/coinmarketcap.png)     |
+| Hasil                     | ![Cuaca](asset/hasil.png)                     |
+
 ---
 
 ## 📄 Lisensi
