@@ -1,5 +1,5 @@
 
-<h1 align="center">🚀 Crypto Excel Price & Reward Updater 📈</h1>
+<h1 align="center">🚀 Crypto to Excel Automation 📈</h1>
 <p align="center">
   <b>Otomatisasi update harga & reward kripto ke file Excel menggunakan API CoinGecko dan CoinMarketCap</b>
 </p>
