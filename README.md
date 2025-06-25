@@ -170,11 +170,11 @@ Pada contoh di README hanya digunakan 1 file, namun Anda bisa menambah file Exce
 
 ## 📸 Screenshot Aplikasi
 
-| Deskripsi                 | Cuplikan                                      |
-| ------------------------- | --------------------------------------------- |
-| Coingecko Process         | ![Price Converter](asset/coingecko.png)       |
-| Coinmarketcap Process     | ![Price Checker](asset/coinmarketcap.png)     |
-| Hasil                     | ![Cuaca](asset/hasil.png)                     |
+| Deskripsi             | Cuplikan                                    |
+|-----------------------|---------------------------------------------|
+| Coingecko Process     | ![Price Converter](asset/coingecko.png)     |
+| Coinmarketcap Process | ![Price Checker](asset/coinmarketcap.png)   |
+| Hasil                 | ![Cuaca](asset/hasil.png)                   |
 
 ---
 
