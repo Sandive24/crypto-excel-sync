@@ -1,3 +1,4 @@
+
 <h1 align="center">🚀 Crypto Excel Price & Reward Updater 📈</h1>
 <p align="center">
   <b>Otomatisasi update harga & reward kripto ke file Excel menggunakan API CoinGecko dan CoinMarketCap</b>
@@ -53,19 +54,20 @@ Dengan alat ini, Anda cukup **sekali input jenis koin dan jumlah koin yang didap
 ## 📦 Instalasi
 
 1. **Clone repository ini:**
-    ```
+    ```bash
     git clone https://github.com/username/price_update.git
     ```
 2. **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
     ```
-    pip install -r [requirements.txt](http://_vscodecontentref_/2)
-    ```
-    **Dependencies:**
-    - requests
-    - pandas
-    - openpyxl
-    - pytz
-    - colorama
+
+**Dependencies:**
+- requests
+- pandas
+- openpyxl
+- pytz
+- colorama
 
 ---
 
@@ -73,21 +75,22 @@ Dengan alat ini, Anda cukup **sekali input jenis koin dan jumlah koin yang didap
 
 ```
 price_update/
-├── asset/                   # Gambar/logo untuk dokumentasi
+├── asset/
 │   ├── coingecko.png
 │   ├── coinmarketcap.png
 │   └── hasil.png
-├── doc/                     # File Excel utama (data, backup, dsb)
+├── doc/
 │   ├── coba.xlsx
 │   └── tes.xlsx
-├── apikey.json              # File API key (jangan di-push ke repo publik)
-├── fungsi_coingecko.py      # Script update harga dari CoinGecko
-├── fungsi_coinmarketcap.py  # Script update harga dari CoinMarketCap
-├── fungsi_reward.py         # Script sinkronisasi & update reward
-├── update.py                # Script utama untuk menjalankan update otomatis
-├── requirements.txt         # Daftar dependencies Python
-├── README.md                # Dokumentasi project
-└── .gitignore               # File/folder yang diabaikan git
+├── apikey.json
+├── fungsi_coingecko.py
+├── fungsi_coinmarketcap.py
+├── fungsi_reward.py
+├── update.py
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
 
 ---
 
@@ -114,78 +117,53 @@ price_update/
     from fungsi_reward import main
     main()
     ```
-    - Pastikan path Excel sudah sesuai di script.
-    - Data reward akan diupdate dan disinkronkan ke sheet `REWARD` di file Excel Anda.
 
 ---
 
 ## ⚡ Penjelasan Singkat Kode
 
-- **fungsi_coingecko.py:**  
-  Mengambil harga dan waktu update dari CoinGecko, menulis ke kolom "CG PRICE" (F) dan "LAST UPDATE (CG)" (I).
-- **fungsi_coinmarketcap.py:**  
-  Mengambil harga dan waktu update dari CoinMarketCap, menulis ke kolom "CMC PRICE" (E) dan "LAST UPDATE (CMC)" (H), serta menampilkan proses di terminal dengan warna.
-- **fungsi_reward.py:**  
-  Menyinkronkan dan memperbarui data reward di sheet `REWARD` pada file Excel Anda berdasarkan harga terbaru.
+| File Python              | Fungsi                                                                 |
+|--------------------------|------------------------------------------------------------------------|
+| `fungsi_coingecko.py`    | Menulis ke kolom "CG PRICE" (F) dan "LAST UPDATE (CG)" (I)             |
+| `fungsi_coinmarketcap.py`| Menulis ke kolom "CMC PRICE" (E) dan "LAST UPDATE (CMC)" (H)           |
+| `fungsi_reward.py`       | Menyinkronkan reward berdasarkan harga terbaru di sheet `REWARD`       |
 
 ---
 
 ### ▶️ Menjalankan Script Otomatis Lewat Batch (Windows)
 
-Anda bisa menjalankan update otomatis dengan mudah menggunakan file batch berikut:
-
 ```bat
 @echo off
 python "update.py"
-Pause
+pause
+```
+
+**Langkah:**
+1. Simpan sebagai `update.bat`
+2. Double klik untuk menjalankan otomatis update harga dan reward
 
 ---
 
-### Cara Pakai
+## 🖼️ Contoh Tampilan
 
-1. **Simpan kode batch di atas sebagai `update.bat`** (misal di folder `doc/`).
-2. **Double klik file `update.bat`** untuk menjalankan update harga dan reward secara otomatis.
-3. Jendela akan tetap terbuka setelah selesai, sehingga Anda bisa melihat hasil atau pesan error.
-
-**Tips:**  
-Pastikan Python sudah terinstall dan environment variable sudah diatur agar perintah `python` bisa dijalankan dari command prompt.
+| CoinGecko (Excel)       | CoinMarketCap (Terminal)     | Sheet Reward Sinkron       |
+|-------------------------|------------------------------|----------------------------|
+| ![CoinGecko](asset/coingecko.png) | ![CMC](asset/coinmarketcap.png) | ![Hasil](asset/hasil.png) |
 
 ---
 
 ## ⚠️ Catatan
 
 - Pastikan file Excel tidak sedang dibuka saat menjalankan skrip.
-- API CoinGecko dan CoinMarketCap memiliki rate limit, gunakan dengan bijak.
-- Ganti API key pada masing-masing skrip dengan milik Anda jika diperlukan.
-- Untuk kebutuhan backup, Anda bisa menambahkan/mengatur lebih dari satu file Excel pada script (cukup duplikasi pemanggilan fungsi dengan path berbeda).
+- Jangan pernah membagikan file `apikey.json` ke publik.
+- Tambahkan `apikey.json` ke `.gitignore` agar tidak ikut terupload ke GitHub.
 
 ---
 
 ### 🔒 Sistem Backup Otomatis
 
-Anda dapat mengatur script untuk update ke **lebih dari satu file Excel** (misal: lokal & cloud/OneDrive) untuk backup otomatis.  
-Pada contoh di README hanya digunakan 1 file, namun Anda bisa menambah file Excel lain sesuai kebutuhan dengan menambah pemanggilan fungsi pada path yang berbeda.
+Anda dapat mengatur update otomatis ke lebih dari satu file Excel (lokal dan cloud) untuk keperluan backup.
 
 ---
 
-## 📸 Screenshot Aplikasi
-
-| Deskripsi             | Cuplikan                                    |
-|-----------------------|---------------------------------------------|
-| Coingecko Process     | ![Price Converter](asset/coingecko.png)     |
-| Coinmarketcap Process | ![Price Checker](asset/coinmarketcap.png)   |
-| Hasil                 | ![Cuaca](asset/hasil.png)                   |
-
----
-
-## 📄 Lisensi
-
-MIT License
-
----
-
-<p align="center">
-  <img src="https://www.coingecko.com/favicon.ico" width="24"/>
-  <img src="https://s2.coinmarketcap.com/static/cloud/img/coinmarketcap_white_1.svg" width="24"/>
-  Dibuat dengan ❤️ oleh AHMAD NUR IKHSAN
-</p>
+Dibuat dengan ❤️ oleh AHMAD NUR IKHSAN
