@@ -1,0 +1,7 @@
+requests
+openpyxl
+pandas
+pytz
+colorama
+Pillow
+pytesseract
