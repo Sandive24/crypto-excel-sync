@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="asset/coingecko.png" alt="CoinGecko Logo" width="60"/>
-  <img src="asset/coinmarketcap.png" alt="CoinMarketCap Logo" width="60"/>
+  <img src="asset\cg.png" alt="CoinGecko Logo" width="60"/>
+  <img src="asset\cmc.png" alt="CoinMarketCap Logo" width="60"/>
 </p>
 
 <h1 align="center">Crypto Excel Price & Reward Updater</h1>
