@@ -146,9 +146,15 @@ pause
 
 ## 🖼️ Contoh Tampilan
 
-| CoinGecko (Excel)       | CoinMarketCap (Terminal)     | Sheet Reward Sinkron       |
-|-------------------------|------------------------------|----------------------------|
-| ![CoinGecko](asset/coingecko.png) | ![CMC](asset/coinmarketcap.png) | ![Hasil](asset/hasil.png) |
+### 1. CoinGecko (Excel)
+![CoinGecko](asset/coingecko.png)
+
+### 2. CoinMarketCap (Terminal)
+![CMC](asset/coinmarketcap.png)
+
+### 3. Sinkronisasi Sheet Reward
+![Hasil](asset/hasil.png)
+
 
 ---
 
